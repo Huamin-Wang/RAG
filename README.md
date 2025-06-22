@@ -16,39 +16,24 @@
   ```bash
   pip install faiss-cpu numpy python-docx python-pptx sentence-transformers langchain pdfplumber
   ```
-
+- 网络要求：
+需要可以访问 https://huggingface.co/ 的环境
 ## 🚀 快速开始
-
-### 1. 克隆项目
-
-```bash
-git clone https://github.com/Huamin-Wang/RAG.git
-cd RAG
-```
-
-### 2. 准备文档
-
-在项目根目录创建`docs`文件夹，并放入需要问答的文档：
-
-```bash
-mkdir docs
-```
-
-### 3. 构建知识库
-
 ```bash
 python main.py
-# 选择1. 构建知识库
+
 ```
+运行后出现可视化界面，按照提示进行操作即可。
+![img.png](pics/img0.png)
 
-### 4. 开始提问
+### 1. 上传文档
+![img.png](pics/img.png)
+选择需要上传的文档，支持DOCX、PPTX、PDF、TXT等格式。系统会自动解析文档内容。
 
-```bash
-python main.py
-# 选择2. 提问查询
-# 输入问题如"Excel中如何插入墨迹公式"
-```
-
+### 2.构建知识库
+![img_1.png](pics/img_1.png)
+### 3. 提问查询
+![img_2.png](pics/img_2.png)
 ## 🔍 系统架构
 
 系统基于RAG（Retrieval-Augmented Generation）架构，主要包含三个模块：
@@ -137,9 +122,6 @@ def generate_answer(context_chunks, query):
 
 ```
 RAG/
-├── docs/                # 文档存储目录
-├── chunks.txt          # 分割后的文本块
-├── index.faiss         # 向量索引文件
 ├── main.py             # 主程序
 ├── DouBao.py           # 大模型API接口
 └── requirements.txt    # 依赖列表
@@ -154,7 +136,6 @@ RAG/
 
 ## 🎓 相关资源
 
-- 完整教程：https://mp.weixin.qq.com/s/rg1-_HMCxlSdeW548JugwQ
 - SentenceTransformer模型：https://www.sbert.net/
 - FAISS向量检索库：https://github.com/facebookresearch/faiss
 
