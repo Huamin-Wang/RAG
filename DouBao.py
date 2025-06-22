@@ -27,7 +27,7 @@ from openai import OpenAI
 #     )
 #     print(f"回答：\n{completion.choices[0].message.content}")
 #     return completion.choices[0].message.content
-
+#申请网址：https://exp.volcengine.com/ark?model=doubao-lite-4k-character-240828
 def get_answer(question: str):
     try:
         client = OpenAI(
