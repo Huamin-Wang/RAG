@@ -35,6 +35,7 @@ python main.py
 
 ### 3. 提问查询
 <img src="pics/img_2.png" alt="img" width="400"/>
+
 ## 🔍 系统架构
 
 系统基于RAG（Retrieval-Augmented Generation）架构，主要包含三个模块：
