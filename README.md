@@ -24,16 +24,17 @@ python main.py
 
 ```
 运行后出现可视化界面，按照提示进行操作即可。
-![img.png](pics/img0.png)
 
 ### 1. 上传文档
-![img.png](pics/img.png)
-选择需要上传的文档，支持DOCX、PPTX、PDF、TXT等格式。系统会自动解析文档内容。
+<img src="pics/img.png" alt="img" width="400"/>
 
-### 2.构建知识库
-![img_1.png](pics/img_1.png)
+选择需要上传的文档，支持 DOCX、PPTX、PDF、TXT 等格式。系统会自动解析文档内容。
+
+### 2. 构建知识库
+<img src="pics/img_1.png" alt="img" width="400"/>
+
 ### 3. 提问查询
-![img_2.png](pics/img_2.png)
+<img src="pics/img_2.png" alt="img" width="400"/>
 ## 🔍 系统架构
 
 系统基于RAG（Retrieval-Augmented Generation）架构，主要包含三个模块：
